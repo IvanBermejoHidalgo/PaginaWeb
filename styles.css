@@ -70,6 +70,7 @@ section {
 
 #descarga h2 {
     color: #007BFF;
+    margin-bottom: 30px;
 }
 
 p {
@@ -81,7 +82,7 @@ p {
 
 .download-button-container {
     background-color: #eff5ff; /* Cambié el color de fondo a un tono de azul claro */
-    padding: 20px;
+    padding: 30px;
     margin-top: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -90,7 +91,7 @@ p {
 }
 
 
-button {
+a {
     background-color: #007BFF;
     color: white;
     border: none;
@@ -102,7 +103,7 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
+a:hover {
     background-color: #0056b3;
 }
 
