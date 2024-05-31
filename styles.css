@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e6ecff; /* Cambié el color de fondo */
+    background-color: #e6ecff;
     color: #333;
 }
 
@@ -12,19 +12,15 @@ body {
 }
 
 .logo {
-    width: 200px; /* Ajusté el ancho de la imagen */
+    width: 200px;
     height: auto;
-    margin-right: 20px; /* Añadí más margen derecho */
-}
-
-.app-title {
-    font-size: 4em; /* Ajusté el tamaño de fuente del título */
+    margin-right: 20px;
 }
 
 header {
     background: linear-gradient(135deg, #007BFF, #00BFFF);
     color: white;
-    padding: 30px 20px; /* Reduje el relleno superior e inferior */
+    padding: 30px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
@@ -32,9 +28,10 @@ header {
 }
 
 .header-content {
-    display: flex; /* Usar flexbox para alinear elementos */
-    align-items: center; /* Alinear verticalmente al centro */
-    justify-content: center; /* Alinear horizontalmente al centro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -52,46 +49,31 @@ section {
 }
 
 #introduccion p {
-    font-size: 1.2em; /* Aumenté el tamaño de la fuente */
-    line-height: 1.8; /* Aumenté el espaciado entre líneas */
-    color: #444; /* Cambié el color del texto a un tono más oscuro */
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #444;
 }
-
-
 
 #introduccion p:nth-of-type(2n) {
-    font-style: italic; /* Hice que los párrafos pares tengan estilo itálico para variar visualmente */
+    font-style: italic;
 }
 
-#introduccion h2 {
+#introduccion h2, #descarga h2 {
     color: #007BFF;
-    text-align: center; /* Alinea el título a la izquierda */
-}
-
-#descarga h2 {
-    color: #007BFF;
-    margin-bottom: 30px;
-}
-
-p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin: 20px 0;
-    text-align: justify;
+    text-align: center;
 }
 
 .download-button-container {
-    background-color: #eff5ff; /* Cambié el color de fondo a un tono de azul claro */
+    background-color: #eff5ff;
     padding: 30px;
     margin-top: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Alinea el contenido al centro */
-    margin-bottom: 20px; /* Espacio inferior */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-
-a {
+a.button {
     background-color: #007BFF;
     color: white;
     border: none;
@@ -101,15 +83,17 @@ a {
     transition: background-color 0.3s ease;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: inline-block;
 }
 
-a:hover {
+a.button:hover {
     background-color: #0056b3;
 }
 
 details {
     margin-top: 20px;
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: left;
     font-size: 1em;
     color: #007BFF;
 }
@@ -127,4 +111,33 @@ footer {
     margin-top: 20px;
     color: #777;
     text-align: center;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    #introduccion p, p {
+        font-size: 1em;
+    }
+
+    .download-button-container {
+        padding: 20px;
+    }
+
+    a.button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
 }
