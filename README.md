@@ -13,6 +13,8 @@ Bienvenido al repositorio de la página de aterrizaje de ShopList. Esta página 
 - Diseño responsivo que se adapta a dispositivos móviles.
 - Instrucciones para habilitar la instalación de aplicaciones desde fuentes desconocidas.
 
+## Contacto
+
 - **Nombre:** Iván Bermejo Hidalgo
 - **Email:** ibermejo@elpuig.xeill.net
 - **GitHub:** [IvanBermejoHidalgo](https://github.com/IvanBermejoHidalgo)
